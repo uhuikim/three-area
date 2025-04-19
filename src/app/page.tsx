@@ -1,95 +1,74 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+import React, { useState } from 'react';
+import { Canvas } from '@react-three/fiber';
+import './style.css';
+import Experience from '@/components/Experience';
+import TextField from '@/components/DimensionInput';
+//https://gero3.github.io/facetype.js/
 
-export default function Home() {
+function Page() {
+
+  const [dimensions, setDimensions] = useState({
+    width: 5,
+    height: 5,
+    depth: 5
+  });
+
+  // 수치 입력 처리
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setDimensions(prev => ({
+      ...prev,
+      [name]: parseFloat(value) || 0
+    }));
+  };
+
+
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div style={{ height: '100vh', width: '100vw' }}>
+      <div className="bg-gray-100 p-4 flex flex-wrap gap-4 border-b">
+        <TextField
+          label="너비 (X)"
+          name="width"
+          value={dimensions.width}
+          onChange={handleChange}
+          type="number"
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <TextField
+          label="높이 (Y)"
+          type="number"
+          name="height"
+          value={dimensions.height}
+          onChange={handleChange}
+        />
+        <TextField
+          label="깊이 (Z)"
+          name="depth"
+          value={dimensions.depth}
+          onChange={handleChange}
+          type="number"
+        />
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        <div className="flex items-end">
+          <p className="text-sm text-gray-600">
+            현재 공간: {dimensions.width} x {dimensions.height} x {dimensions.depth} 단위
+          </p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <Canvas
+        camera={{
+          fov: 60,
+          near: 0.1,
+          far: 200,
+          position: [-4, 3, 6],
+        }}
+        flat
+      >
+        <Experience width={dimensions.width} height={dimensions.height} depth={dimensions.depth} />
+      </Canvas>
     </div>
   );
 }
+
+export default Page;
