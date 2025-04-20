@@ -7,7 +7,7 @@ import { AppData, Layout } from '@/types/layout';
 
 const dataFilePath = path.join(process.cwd(), 'public/data/layoutData.json');
 
-export async function readData(): Promise<AppData> {
+async function readData(): Promise<AppData> {
   try {
     const data = await fs.readFile(dataFilePath, 'utf8');
     return JSON.parse(data);
@@ -24,7 +24,7 @@ export async function readData(): Promise<AppData> {
   }
 }
 
-export async function writeData(data: AppData): Promise<void> {
+async function writeData(data: AppData): Promise<void> {
   await fs.writeFile(dataFilePath, JSON.stringify(data, null, 2), 'utf8');
 }
 
