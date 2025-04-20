@@ -17,7 +17,7 @@
           "position": [-3.33, -2.5, 0],
           "rotation": [0, 0, 0],
           "size": [1.25, 3, 1.25],
-          "color": "#9370DB"
+          "color": "#BAA7E0"
         },
         {
           "id": "desk",
@@ -25,7 +25,7 @@
           "position": [3.33, -3.2, 3.33],
           "rotation": [0, 0, 0],
           "size": [3.33, 0.1, 3.33],
-          "color": "#8a5a44"
+          "color": "#D8A47F"
         },
         {
           "id": "smallBox1",
@@ -33,7 +33,7 @@
           "position": [-2.5, -3.8, 2.5],
           "rotation": [0, 0, 0],
           "size": [1.25, 0.4, 1.25],
-          "color": "#20B2AA"
+          "color": "#A0E7E5"
         },
         {
           "id": "smallBox3",
@@ -41,7 +41,7 @@
           "position": [-2.5, -3.8, -2.5],
           "rotation": [0, 0, 0],
           "size": [1.25, 0.4, 1.25],
-          "color": "#87CEEB"
+          "color": "#B4D4F0"
         }
       ]
     },
@@ -62,7 +62,7 @@
           "position": [-4, -3.5, 0],
           "rotation": [0, 0, 0],
           "size": [5, 1.2, 2],
-          "color": "#4682B4"
+          "color": "#FFB6B9"
         },
         {
           "id": "coffeeTable",
@@ -70,7 +70,7 @@
           "position": [0, -3.7, 0],
           "rotation": [0, 0, 0],
           "size": [2.5, 0.5, 1.5],
-          "color": "#D2B48C"
+          "color": "#FFE0AC"
         },
         {
           "id": "tvStand",
@@ -78,23 +78,23 @@
           "position": [4, -3.5, 0],
           "rotation": [0, 0, 0],
           "size": [4, 1, 1.5],
-          "color": "#8B4513"
+          "color": "#F4A261"
         },
         {
           "id": "plant1",
           "type": "cylinder",
-          "position": [5, -3.5, 4],
+          "position": [5, -2, 4],
           "rotation": [0, 0, 0],
           "size": [0.8, 3, 0.8],
-          "color": "#228B22"
+          "color": "#A8D5BA"
         },
         {
           "id": "lamp1",
           "type": "cylinder",
-          "position": [-5, -3.5, 5],
+          "position": [-5, -2.5, 5],
           "rotation": [0, 0, 0],
           "size": [0.5, 2, 0.5],
-          "color": "#FFD700"
+          "color": "#FFF5BA"
         }
       ]
     },
@@ -115,7 +115,7 @@
           "position": [-3, -3.5, 0],
           "rotation": [0, 0, 0],
           "size": [3, 0.1, 1.8],
-          "color": "#A0522D"
+          "color": "#F6C28B"
         },
         {
           "id": "chair1",
@@ -123,7 +123,7 @@
           "position": [-3, -3, -1.5],
           "rotation": [0, 0, 0],
           "size": [1.2, 1, 1.2],
-          "color": "#696969"
+          "color": "#B5B5B5"
         },
         {
           "id": "bookshelf",
@@ -131,7 +131,7 @@
           "position": [-4.5, -2, 4],
           "rotation": [0, 0, 0],
           "size": [3, 3, 1],
-          "color": "#8B4513"
+          "color": "#E0BBE4"
         },
         {
           "id": "computer",
@@ -139,7 +139,7 @@
           "position": [-3, -3.3, -0.3],
           "rotation": [0, 0, 0],
           "size": [1, 0.6, 0.5],
-          "color": "#C0C0C0"
+          "color": "#E8E8E8"
         },
         {
           "id": "fileCabinet",
@@ -147,7 +147,7 @@
           "position": [4, -3, 4],
           "rotation": [0, 0.75, 0],
           "size": [1, 2, 1.5],
-          "color": "#708090"
+          "color": "#A0AEC0"
         }
       ]
     }
@@ -157,35 +157,35 @@
       "id": "cylinder",
       "name": "원형 기둥",
       "defaultSize": [1, 3, 1],
-      "defaultColor": "#9370DB",
+      "defaultColor": "#BAA7E0",
       "type": "cylinder"
     },
     {
       "id": "desk",
       "name": "책상",
       "defaultSize": [3, 0.1, 2],
-      "defaultColor": "#8a5a44",
+      "defaultColor": "#D8A47F",
       "type": "box"
     },
     {
       "id": "smallBox",
       "name": "작은 상자",
       "defaultSize": [1, 0.4, 1],
-      "defaultColor": "#20B2AA",
+      "defaultColor": "#A0E7E5",
       "type": "box"
     },
     {
       "id": "sofa",
       "name": "소파",
       "defaultSize": [4, 1.2, 2],
-      "defaultColor": "#4682B4",
+      "defaultColor": "#FFB6B9",
       "type": "box"
     },
     {
       "id": "chair",
       "name": "의자",
       "defaultSize": [1, 1, 1],
-      "defaultColor": "#696969",
+      "defaultColor": "#B5B5B5",
       "type": "box"
     },
     {
@@ -199,7 +199,7 @@
       "id": "bookshelf",
       "name": "책장",
       "defaultSize": [3, 5, 1],
-      "defaultColor": "#8B4513",
+      "defaultColor": "#E0BBE4",
       "type": "box"
     }
   ],
