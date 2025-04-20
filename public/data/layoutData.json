@@ -1,0 +1,220 @@
+{
+  "layouts": [
+    {
+      "id": "layout123",
+      "userId": "user456",
+      "name": "내 침실 배치",
+      "timestamp": 1681234567890,
+      "roomDimensions": {
+        "width": 10,
+        "height": 8,
+        "depth": 10
+      },
+      "furnitures": [
+        {
+          "id": "cylinder",
+          "type": "cylinder",
+          "position": [-3.33, -2.5, 0],
+          "rotation": [0, 0, 0],
+          "size": [1.25, 3, 1.25],
+          "color": "#9370DB"
+        },
+        {
+          "id": "desk",
+          "type": "box",
+          "position": [3.33, -3.2, 3.33],
+          "rotation": [0, 0, 0],
+          "size": [3.33, 0.1, 3.33],
+          "color": "#8a5a44"
+        },
+        {
+          "id": "smallBox1",
+          "type": "box",
+          "position": [-2.5, -3.8, 2.5],
+          "rotation": [0, 0, 0],
+          "size": [1.25, 0.4, 1.25],
+          "color": "#20B2AA"
+        },
+        {
+          "id": "smallBox3",
+          "type": "box",
+          "position": [-2.5, -3.8, -2.5],
+          "rotation": [0, 0, 0],
+          "size": [1.25, 0.4, 1.25],
+          "color": "#87CEEB"
+        }
+      ]
+    },
+    {
+      "id": "layout456",
+      "userId": "user456",
+      "name": "거실 배치",
+      "timestamp": 1681345678901,
+      "roomDimensions": {
+        "width": 12,
+        "height": 8,
+        "depth": 12
+      },
+      "furnitures": [
+        {
+          "id": "sofa1",
+          "type": "box",
+          "position": [-4, -3.5, 0],
+          "rotation": [0, 0, 0],
+          "size": [5, 1.2, 2],
+          "color": "#4682B4"
+        },
+        {
+          "id": "coffeeTable",
+          "type": "box",
+          "position": [0, -3.7, 0],
+          "rotation": [0, 0, 0],
+          "size": [2.5, 0.5, 1.5],
+          "color": "#D2B48C"
+        },
+        {
+          "id": "tvStand",
+          "type": "box",
+          "position": [4, -3.5, 0],
+          "rotation": [0, 0, 0],
+          "size": [4, 1, 1.5],
+          "color": "#8B4513"
+        },
+        {
+          "id": "plant1",
+          "type": "cylinder",
+          "position": [5, -3.5, 4],
+          "rotation": [0, 0, 0],
+          "size": [0.8, 3, 0.8],
+          "color": "#228B22"
+        },
+        {
+          "id": "lamp1",
+          "type": "cylinder",
+          "position": [-5, -3.5, 5],
+          "rotation": [0, 0, 0],
+          "size": [0.5, 2, 0.5],
+          "color": "#FFD700"
+        }
+      ]
+    },
+    {
+      "id": "layout789",
+      "userId": "user789",
+      "name": "사무실 배치",
+      "timestamp": 1681456789012,
+      "roomDimensions": {
+        "width": 10,
+        "height": 8,
+        "depth": 10
+      },
+      "furnitures": [
+        {
+          "id": "desk1",
+          "type": "box",
+          "position": [-3, -3.5, 0],
+          "rotation": [0, 0, 0],
+          "size": [3, 0.1, 1.8],
+          "color": "#A0522D"
+        },
+        {
+          "id": "chair1",
+          "type": "box",
+          "position": [-3, -3, -1.5],
+          "rotation": [0, 0, 0],
+          "size": [1.2, 1, 1.2],
+          "color": "#696969"
+        },
+        {
+          "id": "bookshelf",
+          "type": "box",
+          "position": [-4.5, -2, 4],
+          "rotation": [0, 0, 0],
+          "size": [3, 3, 1],
+          "color": "#8B4513"
+        },
+        {
+          "id": "computer",
+          "type": "box",
+          "position": [-3, -3.3, -0.3],
+          "rotation": [0, 0, 0],
+          "size": [1, 0.6, 0.5],
+          "color": "#C0C0C0"
+        },
+        {
+          "id": "fileCabinet",
+          "type": "box",
+          "position": [4, -3, 4],
+          "rotation": [0, 0.75, 0],
+          "size": [1, 2, 1.5],
+          "color": "#708090"
+        }
+      ]
+    }
+  ],
+  "furnitureTypes": [
+    {
+      "id": "cylinder",
+      "name": "원형 기둥",
+      "defaultSize": [1, 3, 1],
+      "defaultColor": "#9370DB",
+      "type": "cylinder"
+    },
+    {
+      "id": "desk",
+      "name": "책상",
+      "defaultSize": [3, 0.1, 2],
+      "defaultColor": "#8a5a44",
+      "type": "box"
+    },
+    {
+      "id": "smallBox",
+      "name": "작은 상자",
+      "defaultSize": [1, 0.4, 1],
+      "defaultColor": "#20B2AA",
+      "type": "box"
+    },
+    {
+      "id": "sofa",
+      "name": "소파",
+      "defaultSize": [4, 1.2, 2],
+      "defaultColor": "#4682B4",
+      "type": "box"
+    },
+    {
+      "id": "chair",
+      "name": "의자",
+      "defaultSize": [1, 1, 1],
+      "defaultColor": "#696969",
+      "type": "box"
+    },
+    {
+      "id": "bed",
+      "name": "침대",
+      "defaultSize": [4, 0.6, 7],
+      "defaultColor": "#6a4c93",
+      "type": "box"
+    },
+    {
+      "id": "bookshelf",
+      "name": "책장",
+      "defaultSize": [3, 5, 1],
+      "defaultColor": "#8B4513",
+      "type": "box"
+    }
+  ],
+  "users": [
+    {
+      "id": "user456",
+      "username": "홍길동",
+      "email": "hong@example.com",
+      "layoutIds": ["layout123", "layout456"]
+    },
+    {
+      "id": "user789",
+      "username": "김철수",
+      "email": "kim@example.com",
+      "layoutIds": ["layout789"]
+    }
+  ]
+}
